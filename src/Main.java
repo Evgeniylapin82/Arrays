@@ -16,21 +16,49 @@ public class Main {
 
         System.out.println("Задача 2");
         for (int i = 0; i < number.length; i++) {
-            System.out.print(number[i] + ", ");
+            System.out.print(number[i]);
+            if (i != number.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
+
         for (int i = 0; i < decimal.length; i++) {
-            System.out.print(decimal[i] + ", ");
+            System.out.print(decimal[i]);
+            if (i != decimal.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
+
         for (int i = 0; i < arbitraryNumber.length; i++) {
-            System.out.print(arbitraryNumber[i] + ", ");
+            System.out.print(arbitraryNumber[i]);
+            if (i != arbitraryNumber.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
         System.out.println("Задача 3");
-        for (int i = 2; i >= 0; i--) {
-            System.out.print(number[i] + ", ");
+        for (int i = number.length - 1; i >= 0; i--) {
+            System.out.print(number[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = decimal.length - 1; i >= 0; i--) {
+            System.out.print(decimal[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = arbitraryNumber.length - 1;i >= 0; i--) {
+            System.out.print(arbitraryNumber[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
@@ -38,8 +66,11 @@ public class Main {
         for (int i = 0; i < number.length; i++) {
             if (number[i] % 2 != 0) {
                 number[i] += 1;
-                System.out.print(number[i] + ", ");
             }
         }
+        System.out.println(Arrays.toString(number));
     }
 }
+
+
+
